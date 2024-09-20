@@ -1,0 +1,102 @@
+.custom-bg{
+	background:#8e24aa!important;
+}
+
+.admin .card {
+    border: 1px solid #8e24aa;
+    transition: background 0.3s; /* Smooth transition on hover */
+}
+
+.admin .card:hover {
+    background: #e2e2e2;
+    cursor:pointer;
+}
+
+.list-group-item.active {
+	background:#8e24aa!important;
+	border-color:#8e24aa!important;
+}
+
+.custom-card {
+    width: 18rem; /* Set the card width */
+    height: 25rem; /* Set the card height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space evenly between body and footer */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    height: 150px; /* Fixed image height */
+    object-fit: cover; /* Ensures the image fits within the defined height */
+}
+
+.custom-active {
+    background-color: rgba(255, 255, 255, 0.7); /* Faded white */
+    color: #000; /* Text color */
+    font-weight: bold; /* Optional: Make text bold */
+}
+
+.discount-label{
+	font-size:10px!important;
+	font-style:italic!important;
+}
+
+.discount-label-price{
+	font-size:12px!important;
+	font-style:italic!important;
+	font-weight:bold;
+	text-decoration:line-through!important;
+}
+
+.product-card:hover{
+	background: #e2e2e2;
+    cursor:pointer;
+}
+
+#toast {
+	min-width:300px;
+	position:fixed;
+	bottom:30px;
+	left:50%;
+	margin-left:-120px;
+	background:#333;
+	padding:15px;
+	color:white;
+	text-align:center;
+	z-index:1;
+	font-size:18px;
+	visibility:hidden;
+	box-shadow:0px 0px 100px #000;
+}
+
+#toast.display {
+	visibility:visible;
+	animation:fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+	from{
+		bottom:0;
+		opacity:0;	
+	}
+	to {
+		bottom:30px;
+		opacity:1;
+	}
+}
+
+@keyframes fadeOut {
+	from{
+		bottom:30px;
+		opacity:1;
+	}
+	to {
+		bottom:0;
+		opacity:0;
+	}
+}
+
